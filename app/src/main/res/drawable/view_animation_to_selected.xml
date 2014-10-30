@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/view_plus">
+    <target android:name="firstGroup" android:animation="@animator/morph_to_selected1" />
+    <target android:name="secondGroup" android:animation="@animator/morph_to_selected2" />
+</animated-vector>
+<!--
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="120" android:translateX="4.8">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="60" android:scaleY="0.8"
+            android:translateX="-4.8" android:translateY="4.8">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="140" android:translateX="5.6">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="70" android:scaleY="1"
+            android:translateX="-5.6" android:translateY="5.6">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="160" android:translateX="6.4">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="80" android:scaleY="0.7"
+            android:translateX="-6.4" android:translateY="6.4">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="180" android:translateX="7.2">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="90" android:scaleY="0.7"
+            android:translateX="-7.2" android:translateY="7.2">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="200" android:translateX="8">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="100" android:scaleY="0.7"
+            android:translateX="-8" android:translateY="8">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="220" android:translateX="8.8">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="110" android:scaleY="0.6"
+            android:translateX="-8.8" android:translateY="8.8">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="240" android:translateX="9.6">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="120" android:scaleY="0.6"
+            android:translateX="-9.6" android:translateY="9.6">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="260" android:translateX="10.4">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="130" android:scaleY="0.6"
+            android:translateX="-10.4" android:translateY="10.4">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="280" android:translateX="11.2">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="140" android:scaleY="0.5"
+            android:translateX="-11.2" android:translateY="11.2">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+
+<item android:duration="15">
+    <vector android:height="64dp"
+        android:width="64dp" android:viewportHeight="48" android:viewportWidth="48" android:alpha="0.8">
+
+        <group android:name="firstGroup" android:pivotX="24" android:pivotY="24" android:rotation="300" android:translateX="12">
+            <path android:fillColor="#fff" android:pathData="M48 26h-48v-4h48z" />
+
+        </group>
+        <group android:name="secondGroup" android:pivotX="24" android:pivotY="24" android:rotation="150" android:scaleY="0.5"
+            android:translateX="-12" android:translateY="12">
+            <path android:name="v2" android:fillColor="#fff" android:pathData="M22 0v48h4v-48z" />
+        </group>
+    </vector>
+</item>
+</animation-list>
+-->
+    <!--
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="15%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="30%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="45%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="60%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="75%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="90%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="105%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="120%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="135%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="150%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="165%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="180%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="195%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="210%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="225%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+<item android:duration="15">
+    <shape android:shape="rectangle">
+        <gradient
+            android:type="radial"
+            android:gradientRadius="240%p"
+            android:startColor="#a000"
+            android:endColor="#0000"
+            android:centerColor="#a000"
+            android:centerX="1.0"
+            android:centerY="0" />
+    </shape>
+</item>
+</animation-list>
+-->

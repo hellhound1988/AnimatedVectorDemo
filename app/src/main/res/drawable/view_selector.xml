@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- provide a different drawable for each state-->
+    <item
+        android:id="@+id/pressed"
+        android:state_selected="true"
+        android:drawable="@drawable/view_check" />
+    <item
+        android:id="@+id/default_st"
+        android:drawable="@drawable/view_plus" />
+
+    <!-- specify a transition -->
+    <transition
+        android:fromId="@+id/default_st"
+        android:toId="@+id/pressed" android:drawable="@drawable/view_animation_to_selected"
+        android:reversible="false"/>
+    <transition
+        android:fromId="@+id/pressed"
+        android:toId="@+id/default_st" android:drawable="@drawable/view_animation_to_default"
+        android:reversible="false"/>
+</animated-selector>
